@@ -1,0 +1,27 @@
+package com.example.demo;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+@Service
+@Repository
+
+public class HiController {
+
+	@GetMapping("/hi")	// 실행방법 http://localhost:8080/hi
+	@ResponseBody	// 응답하는 몸통 > 뷰로 나감
+	public String hi() {
+		return "hi spring boot";
+	}
+}
+
+Boot Dashboard - local - demo 를 start 하면 콘솔창에 뜬다.
+  그리고 그 다음부터는 저장할 때마다 알아서 서버가 실행됨.
+  
+--------------
+
+  

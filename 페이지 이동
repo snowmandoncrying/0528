@@ -1,0 +1,17 @@
+우리가 배웠던 페이지 이동에 관해 간단하게 알아보자.
+
+1. <form action="pro.jsp">
+
+2. <a href="pro.jsp">
+
+3. <script>
+      window.location.href="pro.jsp";
+      document.location="pro.jsp";
+  </script>
+
+4. response.sendRedirect("pro.jsp");
+
+5. <jsp:forward page="pro.jsp">
+
+근데 이제 이 방식도 쓰면 안 된다. 왜냐하면 사용자의 요청이 컨트롤러로 들어가야 하기 때문이다.
+채널은 리모콘으로 바꾸는 것이다! (모델 - 요청 -> 컨트롤러, 결과 -> 뷰)
